@@ -1,0 +1,34 @@
+.filterDiv2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 10px;
+}
+
+.innerFilter {
+  display: flex;
+}
+.singlePicker {
+  width: 50%;
+}
+.innerFilter input {
+  border: 1px solid var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.blackBtn {
+  color: black;
+  background-color: #fff;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  border-radius: 22px;
+}
+.blackBtn2 {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 50px 10px 50px;
+  border-radius: 22px;
+  white-space: nowrap;
+}

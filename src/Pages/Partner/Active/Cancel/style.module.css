@@ -1,0 +1,55 @@
+.cancelButton{
+    background-color: #ffefed !important;
+    color: #DB3B53 !important;
+    border-radius: 15px !important;
+    font-size: 0.8rem !important;
+    font-weight: 400 !important;
+}
+
+.crossImage{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.crossImage img {
+    width: 23%;
+}
+
+.cancelContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.cancelContent p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+
+
+.actionButton{
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+}
+
+.actionButton button{
+    padding: 3% 8%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: #333333;
+    color: white;
+    border-radius: 22px;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+.actionButton button:last-child{
+    border: 1px solid #333333;
+    background-color: white;
+    color: #333333;
+}
+

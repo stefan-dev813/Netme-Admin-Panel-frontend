@@ -1,0 +1,96 @@
+.MainContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #fff;
+  height: 95vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+  gap: 30px;
+}
+.MainContainer::-webkit-scrollbar {
+  display: none;
+}
+.MainContainer > div:nth-child(1) {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.firstSpan {
+  display: flex;
+  gap: 15px;
+}
+.firstSpan p:first-child{
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #333333;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.firstSpan p:last-child{
+  font-size: 0.95rem;
+}
+.cardDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 5%;
+}
+.cardDiv > div {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+}
+.tableDiv {
+  height: 62vh;
+  overflow: scroll;
+  width: 100%;
+}
+.tableDiv::-webkit-scrollbar {
+  display: none;
+}
+.tableDiv table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding-left: 80px;
+  text-align: center;
+  border-radius: 10px;
+}
+.tableDiv table tbody {
+  border: 1px solid #8f8f8f;
+  border-radius: 13px;
+}
+
+.tableDiv th {
+  color: #8f8f8f;
+  text-align: center;
+  white-space: nowrap;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+}
+.tableDiv td {
+  border: 1px solid var(--primary-color);
+  text-align: left;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 10px; /* Increase the gap between table elements */
+}
+
+.tableDiv tr:nth-child(2) td:nth-child(1) {
+  border-radius: 30px 0 0 0;
+}
+.tableDiv tr:nth-child(2) td:last-child {
+  border-radius: 0 30px 0 0;
+}
+.btn {
+  display: flex;
+  gap: 20px;
+}
+.btn button {
+  height: 45px;
+  border-radius: 16px;
+}

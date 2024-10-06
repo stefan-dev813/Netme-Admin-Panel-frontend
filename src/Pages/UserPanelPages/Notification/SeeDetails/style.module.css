@@ -1,0 +1,104 @@
+.MainContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #fff;
+  height: 95vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+  gap: 30px;
+  overflow: scroll;
+}
+.MainContainer::-webkit-scrollbar {
+  display: none;
+}
+h1 {
+  white-space: nowrap;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 30px;
+}
+.container1 span {
+  color: gray;
+  font-size: 20px;
+  white-space: nowrap;
+}
+.container1 select {
+  background-color: #ecf1f4;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resetPassword {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resetPassword input {
+  background-color: #ecf1f4;
+  height: 60px;
+  border-radius: 16px;
+  outline: none;
+}
+
+.resetPassword select {
+  background-color: #ecf1f4;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-top: 40px;
+}
+.btn button {
+  height: 60px;
+  border-radius: 16px;
+}
+.dateDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.preview {
+
+  margin-top: 80px;
+}
+.previewInner {
+  border: 1px solid var(--primary-color);
+  height: 300px;
+  border-radius: 35px;
+  margin-top: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  word-break: break-all;
+
+
+}
+.spanIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+
+}

@@ -1,0 +1,282 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 96vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+  gap: 30px;
+  overflow-x: scroll;
+}
+.MainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  color: #06152b;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h2 {
+  color: #06152b;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.firstContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstContainer > div {
+  display: flex;
+  gap: 20px;
+}
+
+.firstContainer > div > span {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  border: 2px solid var(--primary-color);
+}
+
+.firstContainer > div > span:nth-child(2) > img {
+  width: 100%;
+}
+.dateDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dateDiv input[type="date"]::-webkit-inner-spin-button,
+.dateDiv input[type="date"]::-webkit-calendar-picker-indicator {
+  
+  -webkit-appearance: none;
+}
+.dateDiv input {
+  outline: none;
+}
+.date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.selectMonth {
+  display: flex;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+.selectMonth > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 20px;
+}
+.month {
+  border-right: 1px solid var(--primary-color);
+}
+#activeMonth {
+  background-color: #8cc9e9;
+}
+.selectMonth > p:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.selectMonth > p:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card {
+  border: 1px solid var(--primary-color);
+  border-radius: 13px;
+  width: 33%;
+  padding: 10px;
+  margin: auto;
+  max-width: 400px;
+}
+
+.card > h1 {
+  font-size: 28px;
+}
+
+.card > p {
+  color: #809fb8;
+  font-weight: 700;
+}
+
+.card > img {
+  height: 38px;
+  width: 38px;
+}
+
+.chartDiv {
+  display: flex;
+  gap: 20px;
+  height: 45vh;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.chart {
+  border: 1px solid var(--primary-color);
+  border-radius: 18px;
+  padding: 20px;
+  flex: 5;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.py1 {
+  padding: 0;
+}
+
+.chartHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.innerChartHead {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerChartHead > select {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  padding: 5px 30px 5px 10px;
+  background-image: url("../../../assets/selectArrow.svg"); /* Replace 'path/to/arrow-image.png' with the path to your arrow image */
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  -webkit-appearance: none; /* Remove default arrow appearance on WebKit browsers */
+  -moz-appearance: none; /* Remove default arrow appearance on Mozilla Firefox */
+  appearance: none;
+}
+
+.previous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.thisYear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileDetails {
+  display: flex;
+  gap: 10px;
+  padding-right: 40px;
+}
+.profilePic {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: red;
+}
+
+.tableDiv {
+  overflow-x: scroll;
+  height: 38vh;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+
+  overflow: auto; /* Add scrollbars when content exceeds height */
+}
+
+.tableDiv::-webkit-scrollbar {
+  display: none;
+}
+
+.sideTable {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.sideTable > h2 {
+  color: #06152b;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.roundedTable {
+}
+.roundedTable > tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+.tableDiv table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableDiv tr > th {
+  background-color: #8cc9e9;
+  color: #06152b;
+  text-align: center;
+  position: sticky;
+  top: -1px;
+}
+
+.tableDiv tr > td {
+  text-align: center;
+}
+
+.tableDiv td,
+.tableDiv th {
+  border-bottom: 1px solid var(--primary-color);
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+.tableDiv tr td:nth-child(1),
+.tab2 {
+  border-right: 1px solid var(--primary-color);
+}
+
+.tableDiv tr:last-child {
+  border-bottom: none !important;
+}
+.tableHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.tableHead select{
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 5px;
+}

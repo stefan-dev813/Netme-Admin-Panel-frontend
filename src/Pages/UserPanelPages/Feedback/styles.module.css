@@ -1,0 +1,253 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 95vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+  gap: 30px;
+}
+.MainContainer::-webkit-scrollbar {
+  display: none;
+}
+.firstDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filterDiv {
+  display: flex;
+  gap: 10px;
+}
+.tableDiv {
+  overflow: scroll;
+  height: 74vh;
+  width: 73vw;
+  font-size: 13px;
+  text-align: center !important;
+}
+.tableDiv::-webkit-scrollbar {
+  display: none;
+}
+.tableDiv table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding-left: 80px;
+  text-align: center;
+}
+
+.tableDiv tr > th {
+  color: #8f8f8f;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 10;
+  padding: 5px 40px 5px 40px;
+}
+.tableDiv tr:nth-child(1) > th:nth-child(1) {
+  /* border-left: 1px solid var(--primary-color);
+  border-radius: 13px; */
+}
+.tableDiv tr:nth-child(1) > th:last-child {
+  /* border-right: 1px solid var(--primary-color); */
+}
+
+.tableDiv tr > td {
+  text-align: center;
+}
+
+.tableDiv td {
+  /* border-bottom: 1px solid var(--primary-color); */
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 10px; /* Increase the gap between table elements */
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 13px;
+}
+
+.table th {
+  padding: 8px;
+  text-align: center;
+  /* border-top: 1px solid var(--primary-color); */
+  position: sticky;
+  top: -1px;
+  background-color: #fff;
+  padding-bottom: 5px;  
+}
+.check{
+  display: flex;
+  justify-content: center;
+}
+.table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.table td:first-child {
+  /* border-left: 1px solid var(--primary-color);
+  border-radius: 10px; */
+}
+
+.table td:last-child {
+  /* border-right: 1px solid var(--primary-color); */
+}
+
+.table tr:first-child td {
+  /* border-top: 1px solid var(--primary-color); */
+}
+
+.table tr:last-child td {
+  /* border-bottom: 1px solid var(--primary-color); */
+}
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 20px;
+  z-index: -1;
+}
+.profileDetails2 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  z-index: -1;
+}
+.profilePic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.reason{
+  height: 40px;
+  overflow: scroll;
+
+}
+.reason::-webkit-scrollbar{
+  display: none;
+}
+.h3{
+  font-weight: bold;
+}
+.iconSpan{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.text{
+  height: 120px;
+  overflow: scroll;
+}
+.text::-webkit-scrollbar{
+  display: none;
+}
+.modelBody{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterDiv2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 0px;
+}
+
+.innerFilter {
+  display: flex;
+}
+
+.filterMenu{
+  width: 45%;
+}
+.filterItems{
+  width: 55%;
+  box-sizing: border-box;
+  padding-left: 3%;
+}
+
+.filterItems > p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.adTypeRadio{
+  display: flex;
+  gap: 10px;
+  margin-top: 1%;
+  flex-wrap: wrap;
+}
+
+.adTypeRadio > div {
+  flex-basis: calc(50% - 10px);
+  width: 48%;
+  padding: 2.5% 0;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+.adTypeRadio > div > input[type="radio"] {
+  margin-left: 6%;
+}
+
+.dateSelect{
+  display: flex;
+  gap: 20px;
+}
+
+.singlePicker {
+  width: 49%;
+}
+.innerFilter input {
+  border: 1px solid var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.blackBtn {
+  color: black;
+  background-color: #fff;
+  padding: 10px 30px;
+  border: 1px solid #333333;
+  border-radius: 22px;
+}
+.blackBtn2 {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px 50px 10px 50px;
+  border-radius: 22px;
+  white-space: nowrap;
+}
+
+
+.modalBody{
+  -webkit-padding-start: 0 !important;
+  padding-inline-start: 0 !important;
+}
+
+.activeCard{
+  border-left-width: 8px !important;
+  border-left-color: #8CC9E9;
+  background-color: #f3fafd;
+}
+
+.inactive{
+  background-color: #D9D9D9 !important;
+  opacity: 40%;
+}
+
+.spin {
+  position: absolute;
+  left: 55vw;
+  top: 60vh;
+}
+

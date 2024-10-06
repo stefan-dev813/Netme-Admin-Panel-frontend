@@ -1,0 +1,89 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 95vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+  gap: 30px;
+  font-family: Helvetica;
+}
+.MainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.breadCrumb span {
+  font-size: 1rem;
+}
+
+.adDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.adDetails > p:first-child {
+  color: #06152b;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.adDetails > p:nth-child(2) {
+  color: #333333;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.adContent {
+  margin-top: 1%;
+}
+
+.adContent p {
+  color: #333333;
+  opacity: 50%;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.location > img {
+  width: 13px;
+  height: 16px;
+}
+
+.location p {
+  size: 1rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+.adInfo {
+  display: flex;
+  gap: 20%;
+  margin-top: 2%;
+}
+
+.adType {
+  display: flex;
+  flex-direction: column;
+}
+
+.adType p:first-child {
+  font-size: 0.8rem;
+  color: #333333;
+  opacity: 50%;
+}
+
+.adType p:last-child {
+  font-size: 0.8rem;
+  color: #333333;
+}
+
+.chart{
+    margin-top: -1% !important;
+    height: 48vh;
+}

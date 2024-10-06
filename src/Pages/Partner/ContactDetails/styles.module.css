@@ -1,0 +1,46 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 95vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+  gap: 30px;
+}
+.MainContainer::-webkit-scrollbar {
+  display: none;
+}
+.firstSpan {
+  display: flex;
+  gap: 5px;
+}
+.firstSpan p:first-child{
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #333333;
+  opacity: 50%;
+  cursor: pointer;
+}
+.sir {
+  background-color: var(--primary-color);
+  padding: 2px 10px 2px 10px;
+  border-radius: 15px;
+  width: fit-content;
+}
+.number {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+.numSpan {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.numSpan p {
+  color: #333333;
+  opacity: 50%;
+}

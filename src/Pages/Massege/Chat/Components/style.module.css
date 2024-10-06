@@ -1,0 +1,129 @@
+.userChat {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.userChat:hover {
+  background-color: #2f2d52;
+}
+
+.userChat > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userChatInfo > span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.userChatInfo > p {
+  font-size: 14px;
+  color: lightgray;
+}
+
+.chatIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.chatIcons > img {
+  height: 24px;
+  cursor: pointer;
+}
+
+.chat {
+  flex: 2;
+}
+
+.chatInfo {
+  height: 50px;
+  background-color: #5d5b8d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: lightgray;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  height: 100%;
+  overflow: scroll;
+}
+.messages::-webkit-scrollbar {
+  display: none;
+}
+
+.timestamp {
+  color: #1a2028;
+  opacity: 40%;
+  font-size: 12px;
+}
+
+.msgContent {
+  display: flex;
+  border-radius: 25px 25px 25px 25px;
+  flex-direction: column;
+  width: 30%;
+  padding: 10px 20px;
+  border: 1px solid var(--primary-color);
+  margin-bottom: 20px;
+  position: relative;
+}
+.owner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  color: #fff;
+}
+
+.tail {
+  width: 40px;
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+  transform: rotate(5deg);
+}
+.whiteTail {
+  width: 40px;
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  transform: rotate(-1deg);
+}
+.msgContentOwner {
+  background-color: #8cc9e9 !important;
+  border: none !important;
+}
+
+.messageContent {
+  align-items: flex-end;
+}
+
+.messageContent p {
+  color: white;
+}
+.messageContent p :after {
+  position: absolute;
+  content: "";
+}
+.imageDiv {
+  position: relative;
+  margin-bottom: 25px;
+}
+.downloadIcon {
+  color: black;
+  font-size: 30px;
+  position: absolute;
+}

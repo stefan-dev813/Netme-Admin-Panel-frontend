@@ -1,0 +1,237 @@
+.MainContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #fff;
+    height: 95vh;
+    border-radius: 35px;
+    width: 98%;
+    padding: 3%;
+    gap: 30px;
+    overflow: scroll;
+  }
+  .MainContainer::-webkit-scrollbar {
+    display: none;
+  }
+  h1 {
+    white-space: nowrap;
+  }
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+  }
+  .container1 span {
+    color: gray;
+    font-size: 20px;
+  }
+  .container1 select {
+    background-color: #ecf1f4;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .resetPassword {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .resetPassword input {
+    background-color: #ecf1f4;
+    height: 60px;
+    border-radius: 16px;
+    outline: none;
+  }
+  .resetPassword textarea {
+    background-color: #ecf1f4;
+    border-radius: 16px;
+    outline: none;
+    padding: 10px;
+  }
+  .resetPassword select {
+    background-color: #ecf1f4;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+  }
+  .resetPassword>p{
+    color: gray;
+  }
+  .btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-top: 40px;
+  }
+  .btn button {
+    height: 60px;
+    border-radius: 16px;
+  }
+  .radioP{
+    color: #333333;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .releaseDateSection{
+    display: flex;
+    gap: 2vw;
+  }
+
+  .releaseDate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .releaseDate p{
+    color: gray;
+  }
+
+  .sliderHeading{
+    color: black !important;
+    font-weight: 500;
+  }
+
+
+  .previewInner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .previewInner > p {
+    font-weight: 700;
+  }
+  /* .screenDiv > img {
+  } */
+  .screenDiv {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .screenDiv1 {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    height: 620px;
+  }
+  .screenDiv1 h2 {
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+  .screenDiv1 pre {
+    font-size: 10px;
+    margin: 0px 10px 0 10px;
+    color: #b9b9b9;
+    white-space: wrap;
+  }
+  
+  .screenDiv1Img {
+    height: 150px;
+    border-radius: 25px;
+    width: 322px;
+    margin-right: 18px;
+    margin-top: 15px;
+  }
+  
+  .screenDiv1 span {
+    height: 110px;
+    word-break: break-all;
+    width: 322px;
+    margin-bottom: -35px;
+  }
+  
+.container2 {
+  position: relative;
+}
+  .imageContainer {
+    position: relative;
+  }
+  
+  .suggestionImage {
+    width: auto;
+    height: 540px;
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+  
+ 
+  
+  
+ 
+  
+  .previewInputImage{
+    width: 94%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .previewInputImage img {
+    width: 100%;
+    object-fit: contain;
+    margin-top: 2%;
+    border-radius: 22px;
+  }
+  
+  .previewAdDetails {
+    width: 100%;
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 10%;
+
+    /* margin-left:20%; */
+    align-items: center;
+  }
+  
+  .adPreviewTitle{
+    width: 80%;
+    margin-top: 20%;
+    margin-left: 8%;
+  }
+  .adPreviewTitle p {
+    font-family: Helvetica;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+  }
+  .stars {
+    margin-top: 2%;
+    margin-left: 8%;
+  }
+
+  .previewAdBody{
+    width: 75%;
+    height: 10vh;
+    margin-left: 8%;
+    margin-top: 2%;
+  }
+
+  .previewAdBody p{
+    color: #fff;
+  }
+
+  .previewAdButton{
+    width: 200px;
+  }
+
+  .previewAdButton button {
+    width: 35%;
+    padding: 1%;
+    background-color: #fff;
+    color: #333333;
+    border-radius: 25px;
+    margin-left: 8%;
+  }

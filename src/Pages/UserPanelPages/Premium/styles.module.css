@@ -1,0 +1,214 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 95vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+  gap: 30px;
+  overflow: scroll;
+}
+.MainContainer::-webkit-scrollbar {
+  display: none;
+}
+.firstDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.firstDiv input::placeholder {
+  font-weight: bold;
+  color: black;
+}
+.filterDiv {
+  display: flex;
+  gap: 10px;
+}
+.tableDiv {
+  overflow: scroll;
+  height: 64vh;
+  width: 71vw;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center !important;
+}
+.tableDiv::-webkit-scrollbar {
+  display: none;
+}
+.tableDiv table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding-left: 80px;
+  text-align: center;
+}
+
+.tableDiv tr > th {
+  color: #8f8f8f;
+  text-align: center;
+  white-space: nowrap;
+  padding: 15px 40px 15px 40px;
+  z-index: 10;
+}
+.tableDiv tr:nth-child(1) > th:nth-child(1) {
+  /* border-left: 1px solid var(--primary-color);
+  border-radius: 13px; */
+}
+.tableDiv tr:nth-child(1) > th:last-child {
+  /* border-right: 1px solid var(--primary-color); */
+}
+
+.tableDiv tr > td {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tableDiv td {
+  /* border-bottom: 1px solid var(--primary-color); */
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 10px; /* Increase the gap between table elements */
+}
+.actionDiv {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.actionDiv2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blackBtn {
+  color: #fff;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 22px;
+}
+.blackBtn2 {
+  color: #333333;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  gap: 10px;
+  border: 1px solid black;
+}
+.blackBtn3 {
+  color: #ff5d4d;
+  border: 1px solid #ff5d4d;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.blackBtn4 {
+  color: #333333;
+  background-color: var(--primary-color);
+  padding: 10px 50px 10px 50px;
+  border-radius: 22px;
+  white-space: nowrap;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 13px;
+}
+
+.table th {
+  padding: 8px;
+  text-align: center;
+  /* border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color); */
+
+  position: sticky;
+  top: -1px;
+  background-color: #fff;
+  padding-bottom: 5px;
+}
+
+.table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.table td:first-child {
+  /* border-left: 1px solid var(--primary-color);
+  border-radius: 10px; */
+}
+
+.table td:last-child {
+  /* border-right: 1px solid var(--primary-color); */
+}
+
+.table tr:first-child td {
+  border-top: 1px solid var(--primary-color);
+}
+
+.table tr:last-child td {
+  /* border-bottom: 1px solid var(--primary-color); */
+}
+.numberSpan {
+  padding: 2px 15px;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deleteModeldiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.deleteModeldiv p {
+  font-weight: 700;
+  font-size: 20px;
+}
+.deleteModeldiv img {
+  width: 30%;
+}
+.modelFooter {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.modelFooter button:nth-child(1) {
+  background-color: black;
+  color: #fff;
+  width: 132px;
+  border-radius: 20px;
+}
+
+.modelFooter button:nth-child(2) {
+  border: 1px solid black;
+  width: 132px;
+  border-radius: 20px;
+}
+.spin {
+  position: absolute;
+  left: 55vw;
+  top: 60vh;
+}
+.tabPanel {
+  color: black !important;
+}
+.tabPanel:active {
+  color: black !important;
+}
+#activeTab {
+  background-color: #8cc9e9;
+}

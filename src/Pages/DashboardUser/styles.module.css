@@ -1,0 +1,208 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 96vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+  gap: 30px;
+  overflow: scroll; /* Prevent content overflow */
+}
+.MainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  color: #06152b;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h2 {
+  color: #06152b;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.firstContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstContainer > div {
+  display: flex;
+  gap: 20px;
+}
+
+.firstContainer > div > span {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  border: 2px solid var(--primary-color);
+}
+
+.firstContainer > div > span:nth-child(3) > img {
+  width: 100%;
+  border-radius: 18px;
+}
+.firstContainer > div > span:nth-child(2) > img {
+  width: 100%;
+  border-radius: 18px;
+}
+.firstContainer > div > span:nth-child(2) {
+  border: none !important;
+}
+
+.firstContainer > div > select:nth-child(1) {
+  height: 60px;
+  background-color: #f1f4f9;
+  width: 11vw;
+  -webkit-padding-start: 25px;
+  border-radius: 18px;
+  font-weight: 700;
+  border: 2px solid var(--primary-color);
+  padding-right: 40px; /* Adjust the padding value as per your requirement */
+  background-image: url("../../assets/selectArrow.svg"); /* Replace 'path/to/arrow-image.png' with the path to your arrow image */
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  -webkit-appearance: none; /* Remove default arrow appearance on WebKit browsers */
+  -moz-appearance: none; /* Remove default arrow appearance on Mozilla Firefox */
+  appearance: none;
+}
+.logoutArrow {
+  display: flex;
+  justify-content: left;
+  align-items: bottom;
+  padding-top: 42px;
+  margin-left: -18px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 150px;
+  width: 70%;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+.card {
+  border: 1px solid var(--primary-color);
+  border-radius: 13px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 140px;
+}
+
+.card > h1 {
+  font-size: 28px;
+}
+
+.card > p {
+  color: #809fb8;
+  font-weight: 700;
+}
+
+.card > img {
+  height: 38px;
+  width: 38px;
+}
+
+.chartDiv {
+  display: flex;
+  gap: 30px;
+}
+
+.chart {
+  border: 1px solid var(--primary-color);
+  border-radius: 13px;
+  padding: 20px;
+  flex: 5;
+  width: 50vw;
+}
+.sideTable {
+  display: flex;
+  flex: 2;
+  border-radius: 13px;
+  border: 1px solid var(--primary-color);
+  flex-direction: column;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.sidechart{
+  width: 350px;
+}
+
+.chartHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.innerChartHead {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerChartHead > select {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  padding: 5px 30px 5px 10px;
+  background-image: url("../../assets/selectArrow.svg"); /* Replace 'path/to/arrow-image.png' with the path to your arrow image */
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  -webkit-appearance: none; /* Remove default arrow appearance on WebKit browsers */
+  -moz-appearance: none; /* Remove default arrow appearance on Mozilla Firefox */
+  appearance: none;
+}
+
+.previous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.thisYear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileDetails {
+  display: flex;
+  gap: 10px;
+  padding-right: 40px;
+}
+.profilePic {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: red;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}

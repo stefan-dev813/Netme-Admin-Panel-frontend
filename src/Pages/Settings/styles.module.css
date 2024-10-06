@@ -1,0 +1,64 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 95vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.container > div {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: bold;
+}
+.container > div:nth-child(1) {
+  padding: 60px;
+}
+.container > div:nth-child(2) {
+  border-left: 1px solid var(--primary-color);
+  padding: 10px 220px 0 60px;
+}
+
+.container > div:nth-child(1) select {
+  height: 50px;
+  background-color: var(--primary-color);
+  font-weight: bold;
+}
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--primary-color);
+  padding: 15px;
+  border-radius: 8px;
+}
+.mainContainer .container .resetPassword {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.resetPassword input {
+  background-color: #ecf1f4;
+  height: 59.9px;
+  border-radius: 16px;
+  outline: none;
+}
+.resetPassword input::placeholder {
+    font-weight: 600;
+    color: black;
+}
+.submit{
+    background-color: #333333;
+    color: #fff;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 30px;
+}

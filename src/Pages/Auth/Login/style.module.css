@@ -1,0 +1,72 @@
+.MainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+}
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > div:nth-child(1) {
+  flex-direction: column;
+  text-align: center;
+  font-size: 32px;
+  gap: 20px;
+  font-weight: 700;
+}
+.container > div:nth-child(1) > img {
+  width: 20%;
+}
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  background-color: #fff;
+  padding: 10% 15% 10% 15%;
+  border-radius: 13px;
+}
+.formDiv > h2 {
+  color: var(--primary-btn-color);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.formDiv > Button {
+  background-color: var(--primary-btn-color);
+  color: #ffffff;
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+.formDiv input {
+  font-size: 18px;
+  border-radius: 13px;
+
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.formDiv input::placeholder {
+  font-size: 18px;
+  color: #7a7a7a;
+}
+.inputText {
+  color: #343434;
+  font-size: 16px;
+}
+.forgetLink {
+  text-align: right;
+  color: var(--primary-btn-color);
+  font-size: 18px;
+  font-weight: 600;
+}

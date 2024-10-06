@@ -1,0 +1,302 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 96vh;
+  border-radius: 35px;
+  width: 98%;
+  padding: 3%;
+  gap: 30px;
+  overflow: scroll; /* Prevent content overflow */
+}
+.MainContainer::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  color: #06152b;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h2 {
+  color: #06152b;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.firstContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstContainer > div {
+  display: flex;
+  gap: 10px;
+}
+
+.firstContainer > div > span {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  border: 2px solid var(--primary-color);
+}
+
+.firstContainer > div > span:nth-child(3) > img {
+  width: 100%;
+  border-radius: 18px;
+}
+.firstContainer > div > span:nth-child(3) > {
+  border: none !important;
+}
+
+.firstContainer > div > select:nth-child(1) {
+  height: 50px;
+  background-color: #f1f4f9;
+  width: 9vw;
+  -webkit-padding-start: 25px;
+  border-radius: 18px;
+  font-weight: 700;
+  border: 2px solid var(--primary-color);
+  padding-right: 40px; /* Adjust the padding value as per your requirement */
+  background-image: url("../../assets/selectArrow.svg"); /* Replace 'path/to/arrow-image.png' with the path to your arrow image */
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  -webkit-appearance: none; /* Remove default arrow appearance on WebKit browsers */
+  -moz-appearance: none; /* Remove default arrow appearance on Mozilla Firefox */
+  appearance: none;
+  font-size: 13px;
+}
+.firstContainer > div > select:nth-child(1) > option {
+  width: 9vw;
+  -webkit-padding-start: 25px;
+
+  font-size: 13px;
+}
+.logoutArrow {
+  display: flex;
+  justify-content: left;
+  align-items: bottom;
+  padding-top: 35px;
+  margin-left: -5px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.maincards{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  width: 50%;
+}
+
+.card {
+  border: 1px solid var(--primary-color);
+  border-radius: 13px;
+  padding: 20px;
+  display: flex;
+  height: 150px;
+  margin-top: 30px;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 200px;
+  width: 50%;
+}
+
+.card > h1 {
+  font-size: 28px;
+  margin-top: -12px;
+}
+
+.card > p {
+  color: #809fb8;
+  font-weight: 700;
+}
+
+.card > img {
+  height: 38px;
+  width: 38px;
+}
+
+.chartDiv {
+  display: flex;
+  gap: 20px;
+  height: 45vh;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.chart {
+  border: 1px solid var(--primary-color);
+  border-radius: 18px;
+  padding: 20px;
+  flex: 5;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* .textAlign: 'left', fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' */
+.title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.chartHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#profileImg {
+  border: none;
+}
+
+.innerChartHead {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerChartHead > select {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  padding: 5px 30px 5px 10px;
+  background-image: url("../../assets/selectArrow.svg"); /* Replace 'path/to/arrow-image.png' with the path to your arrow image */
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+  -webkit-appearance: none; /* Remove default arrow appearance on WebKit browsers */
+  -moz-appearance: none; /* Remove default arrow appearance on Mozilla Firefox */
+  appearance: none;
+}
+
+.previous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.mainpiediv{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 10px;
+}
+
+.piechartdiv{
+  padding-top: 15px;
+  width: 250px;
+}
+.thisYear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileDetails {
+  display: flex;
+  gap: 10px;
+  padding-right: 40px;
+}
+.profilePic {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: red;
+}
+
+.tableDiv {
+  overflow-x: scroll;
+  height: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+
+  /* overflow: auto; Add scrollbars when content exceeds height */
+}
+
+.tableDiv::-webkit-scrollbar {
+  display: none;
+}
+
+.sideTable {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.sideTable > h2 {
+  color: #06152b;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.roundedTable > tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+.tableDiv table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tableDiv tr > th {
+  background-color: #8cc9e9;
+  color: #06152b;
+  text-align: center;
+  position: sticky;
+  padding: 20px 10px 10px 10px;
+  top: -1px;
+}
+.tableDiv tr > th:nth-child(1) {
+
+  border-right: 1px solid var(--primary-color);
+
+}
+
+.tableDiv tr > td {
+  text-align: center;
+  padding: 10px;
+}
+
+.tableDiv td,
+.tableDiv th {
+  border-bottom: 1px solid var(--primary-color);
+  text-align: left;
+  text-align: center;
+}
+.tableDiv tr td:nth-child(1) {
+  border-right: 1px solid var(--primary-color);
+}
+
+.tableDiv .roundedTable tr:last-child {
+  border-bottom: none !important;
+}
+
+.spin {
+  position: absolute;
+  left: 45vw;
+  top: 65vh;
+}

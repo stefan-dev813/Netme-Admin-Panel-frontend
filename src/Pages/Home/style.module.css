@@ -1,0 +1,207 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  padding-top: 1%;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.mainContainerUser {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: 100%;
+  padding-top: 1%;
+  height: 100vh;
+  background-color: rgba(43, 42, 42, 0.81);
+}
+select {
+  outline: none;
+}
+.mainContainerUser > div {
+  height: 96vh;
+}
+
+.sideContainer {
+  height: 100%;
+  padding: 0 20px 20px 20px;
+}
+
+.sideContainer::-webkit-scrollbar {
+  display: none;
+}
+.sideIcons{
+  font-size: 20px;
+}
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: var(--primary-btn-color);
+  height: 63vh;
+  overflow-x: scroll;
+}
+#listContainer{
+  height: 74vh;
+
+
+}
+
+.listContainerUser {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #fff;
+  height: 63vh;
+  overflow-x: scroll;
+}
+
+.listContainer::-webkit-scrollbar,
+.listContainerUser::-webkit-scrollbar {
+  display: none;
+}
+
+.listContainer > a > div,
+.listContainerUser > a > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  gap: 20px;
+  cursor: pointer;
+  width: 100%;
+  padding-left: 10%;
+  font-weight: 700;
+}
+
+.listContainer > a > select,
+.listContainerUser > a > select {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  gap: 20px;
+  cursor: pointer;
+  width: 100%;
+  padding-left: 10%;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  color: var(--primary-btn-color);
+  gap: 15px;
+  margin-top: 8%;
+  font-weight: 700 !important;
+  white-space: nowrap;
+  font-size: 17px;
+  background-color: #c8c8c8;
+  padding: 10px 20px;
+  border-radius: 13px;
+  cursor: pointer;
+}
+.logoutUser {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 15px;
+  margin-top: 8%;
+  white-space: nowrap;
+  font-size: 17px;
+  background-color: #323030;
+  padding: 10px 20px;
+  border-radius: 13px;
+}
+
+.icons {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 3%;
+}
+.iconsUser {
+  background-color: #464646;
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 3%;
+}
+
+.image {
+  width: 30%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+#active {
+  background-color: black;
+  color: #fff;
+  border-radius: 13px;
+}
+
+.numberSpan {
+  padding: 2px 10px;
+  background-color: #db3b53;
+  border-radius: 15px;
+  margin-left: 4vw;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#AddDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: #fff;
+  border-radius: 13px;
+  align-items: center;
+  justify-content: center;
+  padding:10% 10%;
+
+
+  height: 150px !important;
+  align-items: flex-start !important;
+}
+#activeAd {
+  color: #fff;
+}
+#inactiveAd {
+  color: gray;
+}
+.subDiv {
+  display: flex;
+  color: #fff;
+ 
+}
+.AddDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  cursor: pointer;
+  width: 100%;
+  padding:5% 10%;
+  font-weight: 700;
+}
+.AddDiv div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.adInnerDiv{
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+}
