@@ -13,9 +13,8 @@ function PrivateRoute({ children }) {
       }
     }
 
-    return null; // Return null if the token cookie is not found
+    return null;
   }
-  // const token = "abcd";
   if (!token) return <Navigate to="/login" />;
   return children;
 }
