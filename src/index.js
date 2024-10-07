@@ -18,5 +18,3 @@ root.render(
     </ChakraProvider>
   </BrowserRouter>
 );
-
-reportWebVitals();
