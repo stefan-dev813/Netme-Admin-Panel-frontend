@@ -45,7 +45,6 @@ const authSlice = createSlice({
       state.isLoggedIn = false;
       state.isLoading = false;
       state.error = action.payload;
-      //   alert(action.payload);
     },
     logout: (state) => {
       state.token = null;
