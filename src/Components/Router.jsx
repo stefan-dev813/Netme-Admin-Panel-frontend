@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import PrivateRoute from "./PrivateRoutes";
 
-// Import all your pages/components here
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import Login from "../Pages/Auth/Login/Login";
 import Partner from "../Pages/Partner/Partner";
@@ -20,7 +19,6 @@ import Voucher from "../Pages/Voucher/Voucher";
 import EditVoucher from "../Pages/Voucher/EditVoucher/EditVoucher";
 import CreateVoucher from "../Pages/Voucher/CreateVoucher/CreateVoucher";
 import Premium from "../Pages/Premium/Premium";
-// import EditSubscriptionPartner from "../Pages/Premium/EditSubscriptionPartner/Premium";
 import EditSubscriptionPartner from '../Pages/Premium/EditSubscriptionPartner/EditSubscription';
 import CreateNewPlan from "../Pages/Premium/CreatePlan/CreateNewPlan";
 import Settings from "../Pages/Settings/Settings";
@@ -57,18 +55,16 @@ const Router = () => {
       }
     }
 
-    return null; // Return null if the token cookie is not found
+    return null;
   }
 
   useEffect(() => {
-    // Check if token exists
     if (!token) {
       navigate("/login");
     } else if (
       (token && location.pathname === "/") ||
       location.pathname === "/"
     ) {
-      // Redirect user to the desired route
       navigate("/Dashboard");
     }
   }, [location.pathname, token, navigate]);
